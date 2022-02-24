@@ -64,6 +64,10 @@ cd font2
 cp -r * ~/.local/share/fonts
 cd ..
 
+cd font3
+cp -r * ~/.local/share/fonts
+cd ..
+
 ###########################################
 
 ####### Install jgmenu ####################
