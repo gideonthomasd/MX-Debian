@@ -32,7 +32,9 @@ cp dunstrc ~/.config/dunst/dunstrc
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/jgmenu
 mkdir -p ~/.config/xfce4/terminal
+mkdir -p ~/.config/lxterminal
 
+cp lxterminal.conf ~/.config/lxterminal/lxterminal.conf
 cp terminalrc ~/.config/xfce4/terminal/terminalrc
 cp bashrc ~/.bashrc
 
