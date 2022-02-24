@@ -12,7 +12,7 @@
 #font = JetBrainsMonoMedium 13
 #font = UbuntuMono Nerd Font 13
 #font = SpaceMono Nerd Font 13
-font = Monospace 14
+font = Monospace 9
 #font = Iosevka Term 13
 
 # Allow a small subset of html markup:
