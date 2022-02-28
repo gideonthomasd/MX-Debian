@@ -22,12 +22,26 @@ chmod +x *.sh
 cd ..
 cd ..
 
+cd bspwm
+chmod +x bspwmrc
+cd ..
+
+cd polybar-bspwm
+chmod +x *.sh
+cd scripts
+chmod +x *.sh
+cd ..
+cd ..
+
 #########Install Directories & Files######
 mkdir -p ~/.config/picom
 cp picom.conf ~/.config/picom/picom.conf
 
 mkdir -p ~/.config/dunst
 cp dunstrc ~/.config/dunst/dunstrc
+
+mkdir -p $HOME"/.config/polybar-bspwm"
+mkdir -p $HOME"/.config/bspwm"
 
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/jgmenu
@@ -45,6 +59,17 @@ cd ..
 cd jgmenu
 cp -r * ~/.config/jgmenu
 cd ..
+
+#######Install bspwm #####################
+cd polybar-bspwm
+cp -r * ~/.config/polybar-bspwm
+cd ..
+
+cd bspwm
+cp -r * ~/.config/bspwm
+cd ..
+
+##########################################
 
 #### Install i3 ##########################
 mkdir -p ~/.config/i3
