@@ -25,6 +25,10 @@ mkdir -p ~/.gkrellm2
 #### Copy into directories ###############
 
 cd openbox
+tar -xzvf obmenu-generator.tar.gz
+tar -xzvf cairo-dock.tar.gz
+tar -xzvf themes.tar.gz
+tar -xzvf gkrellm2.tar.gz
 
 
 cd openbox
