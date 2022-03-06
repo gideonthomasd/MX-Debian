@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#### Install ############################
+
+sudo apt install -y openbox obconf lxappearance lxappearance-obconf tint2 git lxtask feh xterm
+
 #### Create directories##################
 
 mkdir -p ~/.config/openbox
