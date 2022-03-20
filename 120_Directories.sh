@@ -33,6 +33,19 @@ chmod +x *.sh
 cd ..
 cd ..
 
+cd herbstluftwm
+chmod +x autostart
+chmod +x autostart.1
+chmod +x *.sh
+chmod +x config.ini
+chmod +x scratchpad
+chmod +x sxhkdrc
+
+cd scripts
+chmod +x *.sh
+cd ..
+cd ..
+
 #########Install Directories & Files######
 mkdir -p ~/.config/picom
 cp picom.conf ~/.config/picom/picom.conf
@@ -47,6 +60,7 @@ mkdir -p ~/.config/rofi
 mkdir -p ~/.config/jgmenu
 mkdir -p ~/.config/xfce4/terminal
 mkdir -p ~/.config/lxterminal
+mkdir -p ~/.config/herbstluftwm
 
 cp lxterminal.conf ~/.config/lxterminal/lxterminal.conf
 cp terminalrc ~/.config/xfce4/terminal/terminalrc
@@ -60,7 +74,12 @@ cd jgmenu
 cp -r * ~/.config/jgmenu
 cd ..
 
-#######Install bspwm #####################
+####### Install herbstluftwm ################
+cd herbstluftwm
+cp -r * ~/.config/herbstluftwm
+cd ..
+
+#######Install bspwm ########################
 cd polybar-bspwm
 cp -r * ~/.config/polybar-bspwm
 cd ..
