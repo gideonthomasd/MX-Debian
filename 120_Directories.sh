@@ -41,6 +41,8 @@ chmod +x config.ini
 chmod +x scratchpad
 chmod +x sxhkdrc
 
+sudo cp scratchpad /usr/local/bin/scratchpad
+
 cd scripts
 chmod +x *.sh
 cd ..
