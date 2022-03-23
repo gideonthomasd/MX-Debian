@@ -1,2 +1,2 @@
 # MX-Debian
-Debian - mxlinux 21
+Debian - LMDE 5
