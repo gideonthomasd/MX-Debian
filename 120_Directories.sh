@@ -52,6 +52,7 @@ cp brave.png ~/Pictures
 cp exit.png ~/Pictures
 cp files.png ~/Pictures
 cp settings.png ~/Pictures
+cp startup.png ~/Pictures
 
 #########Install Directories & Files######
 mkdir -p ~/.config/picom
