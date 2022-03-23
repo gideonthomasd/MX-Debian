@@ -36,7 +36,8 @@ super + F5
 	blueman-manager
 	
 super + x
-	~/.config/rofi/applets/applets/powermenu.sh
+	~/log.sh
+	#~/.config/rofi/applets/applets/powermenu.sh
 #arcolinux-logout
 F9
   brave-browser
