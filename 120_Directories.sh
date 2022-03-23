@@ -68,6 +68,11 @@ mkdir -p ~/.config/jgmenu
 mkdir -p ~/.config/xfce4/terminal
 mkdir -p ~/.config/lxterminal
 mkdir -p ~/.config/herbstluftwm
+mkdir -p ~/.config/geany
+
+cd geany
+cp -r * ~/.config/geany
+cd ..
 
 cp lxterminal.conf ~/.config/lxterminal/lxterminal.conf
 cp terminalrc ~/.config/xfce4/terminal/terminalrc
