@@ -28,7 +28,7 @@ format-background = ${color.altblack}
 type = custom/script
 interval = 1
 exec = ~/.config/i3/polybar/moc.sh
-format-foreground = ${colors.black}
+;format-foreground = ${colors.black}
 click-left = mocp -G
 click-right = setsid -f lxterminal -e 'padsp mocp'
 format-background = ${color.cyan}
@@ -418,3 +418,53 @@ ramp-signal-4 = " "
 ramp-signal-foreground = ${color.background}
 ramp-signal-background = ${color.magenta}
 ramp-signal-font = 2
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+; If not, uses default sink
+; sink = alsa_output.pci-0000_12_00.3.analog-stereo
+; sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+
+; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+; Default: true
+use-ui-max = false
+
+; Interval for volume increase/decrease (in percent points)
+; Default: 5
+interval = 5
+
+; Available tags:
+;   <label-volume> (default)
+;   <ramp-volume>
+;   <bar-volume>
+format-volume = <label-volume>
+
+; Available tags:
+;   <label-muted> (default)
+;   <ramp-volume>
+;   <bar-volume>
+format-muted = <label-muted>
+
+;format-background = ${color.yellow}
+
+; Available tokens:
+;   %percentage% (default)
+;   %decibels% (unreleased)
+label-volume = %{T1}墳%{T-}  %{T1}%percentage%%%{T-}
+label-volume-foreground = ${color.black}
+label-volume-background = ${color.green}
+; Available tokens:
+;   %percentage% (default)
+;   %decibels% (unreleased)
+label-muted = %{T1}ﱝ%{T-} %{T1}shhh!%{T-}
+label-muted-foreground = ${colors.dark-green}
+
+; Only applies if <ramp-volume> is used
+ramp-volume-0 = %{T1}%{T-}
+ramp-volume-1 = %{T1}奔%{T-}
+ramp-volume-2 = %{T1}墳%{T-}
+
+; Right and Middle click (unreleased)
+click-right = lxterminal -e 'pulsemixer'
