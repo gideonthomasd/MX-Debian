@@ -48,6 +48,11 @@ chmod +x *.sh
 cd ..
 cd ..
 
+cp brave.png ~/Pictures
+cp exit.png ~/Pictures
+cp files.png ~/Pictures
+cp settings.png ~/Pictures
+
 #########Install Directories & Files######
 mkdir -p ~/.config/picom
 cp picom.conf ~/.config/picom/picom.conf
