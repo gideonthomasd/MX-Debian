@@ -1,5 +1,9 @@
 #!/bin/bash -e
 
+cd awesome
+chmod +x *.sh
+cd ..
+
 cd rofi
 cd applets
 cd applets
