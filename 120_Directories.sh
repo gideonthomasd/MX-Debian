@@ -165,6 +165,20 @@ cd ..
 sudo cp dwm.desktop /usr/share/xsessions/dwm.desktop
 cp autostart.sh ~/.local/share/dwm
 
+
+######### Awesome ##################################
+mkdir -p ~/.config/awesome
+git clone --recurse-submodules --remote-submodules --depth 1 -j 2 https://github.com/lcpz/awesome-copycats.git
+mv -bv awesome-copycats/* ~/.config/awesome; rm -rf awesome-copycats
+
+cd awesome
+cp -r * ~/.config/awesome
+cd ..
+
+
+cd ~/.config/awesome
+git clone https://github.com/streetturtle/awesome-wm-widgets.git
+
 ######## Ending ####################################
 cd ~/Luke/dwm-flexipatch
 tar -xzvf patch.tar.gz
