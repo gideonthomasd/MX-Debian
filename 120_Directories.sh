@@ -2,6 +2,12 @@
 
 cd awesome
 chmod +x *.sh
+cd polybar
+chmod +x *.sh
+cd scripts
+chmod +x *.sh
+cd ..
+cd ..
 cd ..
 
 cd rofi
