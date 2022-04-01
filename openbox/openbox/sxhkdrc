@@ -37,7 +37,6 @@ super + F5
 	
 super + x
 	~/log.sh
-	#~/.config/rofi/applets/applets/powermenu.sh
 #arcolinux-logout
 F9
   brave-browser
