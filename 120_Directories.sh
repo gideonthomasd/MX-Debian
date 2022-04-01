@@ -10,6 +10,12 @@ cd ..
 cd ..
 cd ..
 
+cd openbox
+cd openbox
+chmod +x *.sh
+cd ..
+cd ..
+
 cd rofi
 cd applets
 cd applets
