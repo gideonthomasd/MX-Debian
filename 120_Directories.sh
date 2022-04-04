@@ -11,7 +11,7 @@ cd ..
 cd ..
 
 cd openbox
-cd openbox
+cd openbox2
 chmod +x *.sh
 cd ..
 cd ..
