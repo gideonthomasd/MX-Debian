@@ -1,0 +1,22 @@
+
+picom &
+lxpolkit &
+tint2 &
+sxhkd -c ~/.config/openbox/sxhkdrc &
+nitrogen --restore &
+#gkrellm &
+plank &
+parcellite &
+~/.config/openbox/mem.sh | lemonbar -f "-adobe-courier-bold-r-normal--24-240-75-75-*-*-*-*" &
+#echo "Hello" | lemonbar -f "-adobe-courier-bold-r-normal--24-240-75-75-*-*-*-*" -p
+
+
+#cairo-dock -o &
+
+#sleep 2s
+#pkill mintUpdate &
+#pkill mintreport-tray &
+
+#########  Kill processes ####################
+
+~/.config/openbox/kill.sh &
